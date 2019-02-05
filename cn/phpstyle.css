@@ -1,0 +1,106 @@
+
+.contact-title{
+    margin-top: 100px;
+    color:#fff;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+.contact-title h1{
+    font-size: 32px;
+    line-height: 10px;
+}
+
+.contact-title h2{
+    font-size: 16px;
+}
+.contact-form-php{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control{
+    width:400px;
+    border-bottom:0.8px solid gray;
+    border-radius: 5px;
+    font-size:15px;
+    margin-bottom: 15px;
+}
+
+input{
+    height: 25px;
+}
+
+.form-submit{
+    width:200px;
+    border-bottom:1px solid gray;
+    border-radius: 5px;
+    font-size:16px;
+    margin-bottom: 15px;
+    height:50px;
+}
+
+form .submit:hover{
+    background-color: #fdd428;
+    /* cursor:pointer;*/
+}
+
+.logoshow{
+    margin:10px 20px;
+}
+
+@media (max-width:600px){
+    .form-control{
+        width:300px;
+    }
+    .fs-6 {
+        font-size: 4.5rem !important;
+    }
+    .fs-3 {
+        font-size: 2.0rem !important;
+    }
+
+    .mark{
+        width:600px;
+        text-align: center;
+    }
+
+    .logoshow{
+       width: 150px;
+       margin:auto;
+    }
+
+    .flex-col-xs-10{
+        margin: auto;
+    }
+
+    .contact-form{
+        margin: auto;
+    }
+
+    .form-submit{
+        color: gray;
+        background: white;
+    }
+}
+
+@media (max-width:1000px){
+    .mark{
+        width:1000px;
+        text-align: center;
+    }
+
+    .flex-col-xs-10{
+        margin: auto;
+    }
+
+    .contact-form{
+        margin: auto;
+    }
+}
+
