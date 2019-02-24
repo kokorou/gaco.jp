@@ -514,19 +514,19 @@
           </div>
           <div class="col-lg-8 pl-lg-5 mt-6 mt-lg-0">
             <h5 class="color-white">您想要咨询：</h5>
-            <form method="POST" data-netlify="true" name="contact" action="/#contact">
+            <form method="POST" data-netlify="true" name="contact" action="/#contact" id="contact-form">
               <div class="row">
                 <div class="col-md-6 col-sm-12 mt-4">
-                  <input class="form-control" type="hidden" name="问询来自" value="htts://gaco.jp/cn" />
-                  <input class="form-control" type="text" name="名字" placeholder="您的姓名"
+                  <input class="form-control" type="hidden" name="问询来自" value="gaco.jp/cn" />
+                  <input class="form-control" type="text" name="姓名" placeholder="您的姓名"
                     aria-label="Text input with dropdown button" />
                 </div>
                 <div class="col-md-6 col-sm-12 mt-4">
-                  <input class="form-control" type="text" name="邮箱地址或电话号码" placeholder="邮箱地址/或电话号码"
+                  <input class="form-control" type="text" name="邮箱地址/电话号码" placeholder="邮箱地址或电话号码"
                     aria-label="Text input with dropdown button" />
                 </div>
                 <div class="col-md-12 col-sm-12 mt-4">
-                  <input class="form-control" type="text" name="咨询主题与内容" placeholder="咨询主题与内容"
+                  <input class="form-control" type="text" name="问询内容" placeholder="咨询主题与内容"
                     aria-label="Text input with dropdown button" />
                 </div>
                 <div class="col-md-10 col-sm-12 mt-4" data-netlify-recaptcha="true"></div>
@@ -706,7 +706,6 @@
   <script>
     $("#contact-form").submit(function (e) {
       e.preventDefault();
-
       var $form = $(this);
       $.post($form.attr("action"), $form.serialize()).then(function () {
         $('#sendFormModal').modal({

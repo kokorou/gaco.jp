@@ -499,7 +499,7 @@
             <form method="POST" data-netlify="true" name="contact" id="contact-form" action="/#contact">
               <div class="row">
                 <div class="col-md-6 col-sm-12 mt-4">
-                  <input class="form-control" type="hidden" name="問い合わせ元" value="gaco.jp/jp" />
+                  <input class="form-control" type="hidden" name="問い合わせ元" value="https://gaco.jp/jp" />
                   <input class="form-control" type="text" name="名前" placeholder="お名前"
                     aria-label="Text input with dropdown button" />
                 </div>
@@ -683,7 +683,6 @@
   <script>
     $("#contact-form").submit(function (e) {
       e.preventDefault();
-
       var $form = $(this);
       $.post($form.attr("action"), $form.serialize()).then(function () {
         $('#sendFormModal').modal({
