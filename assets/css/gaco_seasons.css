@@ -1,0 +1,942 @@
+html {
+  touch-action: manipulation;
+}
+#root {
+  max-width: 100%;
+  border: none;
+  background: transparent;
+  margin: 0 auto;
+  padding: 0;
+  flex: none;
+  background: #37c6c0;
+  background: -moz-linear-gradient(-45deg, #37c6c0 0%, #1db0b8 100%);
+  background: -webkit-linear-gradient(-45deg, #37c6c0 0%, #1db0b8 100%);
+  background: linear-gradient(135deg, #37c6c0 0%, #1db0b8 100%);
+  background-attachment: fixed;
+}
+#root > main {
+  width: 100%;
+  flex: none;
+  background: transparent;
+  margin: 0 auto;
+}
+#gaco_seasons {
+  overflow: hidden;
+  color: #fff;
+}
+#gaco_seasons h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+#gaco_seasons .container-1640 {
+  max-width: 1640px;
+}
+#gaco_seasons .IIV::-webkit-media-controls-play-button,
+#gaco_seasons video::-webkit-media-controls-start-playback-button {
+  opacity: 0;
+  pointer-events: none;
+  width: 5px;
+}
+#gaco_seasons video::-webkit-media-controls {
+  display: none !important;
+}
+#gaco_seasons .view_section {
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 767px) {
+  #gaco_seasons .section_fix_top_when_mobile {
+    padding-top: 60px;
+  }
+}
+#gaco_seasons #landing {
+  background-image: url('../images/gaco_seasons/rwd_logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  position: relative;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+  #gaco_seasons #landing {
+    background-image: url('../images/gaco_seasons/rwd_logo.png');
+  }
+}
+@media (min-width: 768px) {
+  #gaco_seasons #landing {
+    background-image: none;
+  }
+}
+#gaco_seasons #landing:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url('../images/gaco_seasons/gradient.png');
+  background-repeat: no-repeat;
+  z-index: 2;
+  background-size: cover;
+  background-position: center center;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+  #gaco_seasons #landing:after {
+    background-image: url('../images/gaco_seasons/gradient.png');
+  }
+}
+#gaco_seasons #landing.view_section {
+  z-index: 1;
+}
+#gaco_seasons #landing .fp-tableCell {
+  vertical-align: top;
+}
+@media (min-width: 1280px) {
+  #gaco_seasons #landing .fp-tableCell {
+    display: block;
+  }
+}
+#gaco_seasons #landing .overview_top {
+  position: relative;
+  z-index: 3;
+  padding-top: 80px;
+}
+@media (min-width: 1280px) {
+  #gaco_seasons #landing .overview_top {
+    min-height: 900px;
+    min-height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  #gaco_seasons #landing .overview_top .overview_top_1 {
+    display: block;
+    -webkit-align-self: flex-start;
+    -md-align-self: flex-start;
+    align-self: flex-start;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #gaco_seasons #landing .overview_top .overview_top_2 {
+    display: block;
+    -webkit-align-self: flex-end;
+    -md-align-self: flex-end;
+    align-self: flex-end;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  #gaco_seasons #landing .overview_top {
+    padding-top: 120px;
+  }
+}
+#gaco_seasons #landing .overview_top .event_logo {
+  -moz-transition: all 0.33s ease;
+  -o-transition: all 0.33s ease;
+  -webkit-transition: all 0.33s ease;
+  transition: all 0.33s ease;
+  width: 100%;
+  max-width: 240px;
+}
+@media (min-width: 480px) {
+  #gaco_seasons #landing .overview_top .event_logo {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1440px) {
+  #gaco_seasons #landing .overview_top .event_logo {
+    max-width: 470px;
+  }
+}
+#gaco_seasons #landing .overview_top .datetime {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 470px;
+  width: 100%;
+  font-weight: 600;
+  position: relative;
+}
+@media (min-width: 768px) {
+  #gaco_seasons #landing .overview_top .datetime {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+#gaco_seasons #landing .overview_top .datetime:after {
+  content: ' ';
+  position: absolute;
+  height: 1px;
+  top: 50%;
+  background: #fff;
+  left: 140px;
+  width: calc(100% - 140px - 95px);
+}
+@media (min-width: 480px) {
+  #gaco_seasons #landing .overview_top .datetime {
+    font-size: 26px;
+  }
+  #gaco_seasons #landing .overview_top .datetime:after {
+    left: 190px;
+    width: calc(100% - 190px - 130px);
+  }
+}
+#gaco_seasons #landing .overview_top .datetime .date_start {
+  float: left;
+}
+#gaco_seasons #landing .overview_top .datetime .date_end {
+  float: right;
+}
+#gaco_seasons #landing .overview_top .datetime.Germany .date_start {
+  margin-bottom: 10px;
+}
+#gaco_seasons #landing .overview_top .datetime.Germany:after {
+  top: 13px;
+}
+@media (min-width: 480px) {
+  #gaco_seasons #landing .overview_top .datetime.Germany:after {
+    left: 210px;
+    width: calc(100% - 295px - 130px);
+  }
+}
+@media (max-width: 860px) {
+  #gaco_seasons #landing .overview_top .datetime.Germany .date_start,
+  #gaco_seasons #landing .overview_top .datetime.Germany .date_end {
+    float: none;
+    display: block;
+  }
+  #gaco_seasons #landing .overview_top .datetime.Germany:after {
+    left: 220px;
+    width: 50px;
+  }
+}
+@media (max-width: 480px) {
+  #gaco_seasons #landing .overview_top .datetime.Germany:after {
+    left: 170px;
+  }
+}
+#gaco_seasons #landing .overview_top .subtitle {
+  margin: 10px auto;
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  #gaco_seasons #landing .overview_top .subtitle {
+    margin: 20px auto;
+  }
+}
+#gaco_seasons #landing .swiper-container {
+  display: none;
+}
+@media (min-width: 768px) {
+  #gaco_seasons #landing .swiper-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+#gaco_seasons #landing .swiper-container .slick-slide {
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#gaco_seasons #landing .swiper-container .slick-slide .swiper-slide {
+  height: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+#gaco_seasons #landing .swiper-container .slick-slide .swiper-slide.bg1 {
+  background-image: none;
+  background-color: #0d0d0d;
+  overflow: hidden;
+  pointer-events: none;
+}
+#gaco_seasons
+  #landing
+  .swiper-container
+  .slick-slide
+  .swiper-slide.bg1
+  .video_container {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+#gaco_seasons
+  #landing
+  .swiper-container
+  .slick-slide
+  .swiper-slide.bg1
+  .video_container
+  video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#gaco_seasons #landing .swiper-container .slick-slide .swiper-slide.bg2 {
+  background-image: url('../images/gaco_seasons/bg_summer.jpg');
+  background-repeat: no-repeat;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+  #gaco_seasons #landing .swiper-container .slick-slide .swiper-slide.bg2 {
+    background-image: url('../images/gaco_seasons/bg_summer.jpg');
+  }
+}
+#gaco_seasons #landing .swiper-container .slick-slide .swiper-slide.bg3 {
+  background-image: url('../images/gaco_seasons/bg_autumn.jpg');
+  background-repeat: no-repeat;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+  #gaco_seasons #landing .swiper-container .slick-slide .swiper-slide.bg3 {
+    background-image: url('../images/gaco_seasons/bg_autumn.jpg');
+  }
+}
+#gaco_seasons #landing .swiper-container .slick-slide .swiper-slide.bg4 {
+  background-image: url('../images/gaco_seasons/bg_winter.jpg');
+  background-repeat: no-repeat;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  all and (-o-min-device-pixel-ratio: 3 / 2),
+  all and (min--moz-device-pixel-ratio: 1.5),
+  all and (min-device-pixel-ratio: 1.5) {
+  #gaco_seasons #landing .swiper-container .slick-slide .swiper-slide.bg4 {
+    background-image: url('../images/gaco_seasons/bg_winter.jpg');
+  }
+}
+#gaco_seasons #landing .swiper-container .slick-list,
+#gaco_seasons #landing .swiper-container .slick-track {
+  height: 100%;
+}
+#gaco_seasons #landing .feature_wrap_parent {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 60px;
+}
+@media (min-width: 768px) {
+  #gaco_seasons #landing .feature_wrap_parent {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  #gaco_seasons #landing .feature_wrap_parent {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+@media (min-width: 1440px) {
+  #gaco_seasons #landing .feature_wrap_parent {
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+}
+#gaco_seasons #landing .feature_wrap_parent .feature_wrap {
+  padding: 10px 15px;
+  color: #6b6c6e;
+  cursor: pointer;
+  -moz-transition: color 0.33s ease;
+  -o-transition: color 0.33s ease;
+  -webkit-transition: color 0.33s ease;
+  transition: color 0.33s ease;
+}
+@media (min-width: 768px) {
+  #gaco_seasons #landing .feature_wrap_parent .feature_wrap {
+    padding: 20px 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #gaco_seasons #landing .feature_wrap_parent .feature_wrap {
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 1440px) {
+  #gaco_seasons #landing .feature_wrap_parent .feature_wrap {
+    padding: 50px 45px;
+  }
+}
+#gaco_seasons #landing .feature_wrap_parent .feature_wrap .rwbg1,
+#gaco_seasons #landing .feature_wrap_parent .feature_wrap .rwbg2,
+#gaco_seasons #landing .feature_wrap_parent .feature_wrap .rwbg3 {
+  display: none;
+}
+@media (max-width: 767px) {
+  #gaco_seasons #landing .feature_wrap_parent .feature_wrap {
+    color: #fff;
+  }
+  #gaco_seasons
+    #landing
+    .feature_wrap_parent
+    .feature_wrap
+    .feature_with_border.feature_with_border_high {
+    border-color: #37c6c0;
+  }
+  #gaco_seasons #landing .feature_wrap_parent .feature_wrap .rwbg1,
+  #gaco_seasons #landing .feature_wrap_parent .feature_wrap .rwbg2,
+  #gaco_seasons #landing .feature_wrap_parent .feature_wrap .rwbg3 {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #gaco_seasons #landing .feature_wrap_parent .feature_wrap:hover {
+    color: #848588;
+  }
+}
+#gaco_seasons #landing .feature_wrap_parent .feature_wrap.active {
+  color: #fff;
+}
+#gaco_seasons
+  #landing
+  .feature_wrap_parent
+  .feature_wrap.active
+  .feature_with_border.feature_with_border_high {
+  border-color: #1db0b8;
+}
+#gaco_seasons #landing .feature_wrap_parent .feature_wrap .big_line_height {
+  font-size: 14px;
+  line-height: 36px;
+}
+#gaco_seasons #landing .feature_wrap_parent .feature_wrap .big_title {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+}
+@media (min-width: 1440px) {
+  #gaco_seasons #landing .feature_wrap_parent .feature_wrap .big_title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+#gaco_seasons #landing .feature_wrap_parent .feature_wrap .feature_with_border {
+  -moz-transition: border 0.33s ease;
+  -o-transition: border 0.33s ease;
+  -webkit-transition: border 0.33s ease;
+  transition: border 0.33s ease;
+  border-bottom: 1px solid #505051;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+@media (min-width: 1440px) {
+  #gaco_seasons
+    #landing
+    .feature_wrap_parent
+    .feature_wrap
+    .feature_with_border {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+}
+#gaco_seasons
+  #landing
+  .feature_wrap_parent
+  .feature_wrap
+  .feature_with_border.feature_with_border_high {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+@media (min-width: 1440px) {
+  #gaco_seasons
+    #landing
+    .feature_wrap_parent
+    .feature_wrap
+    .feature_with_border.feature_with_border_high {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+}
+#gaco_seasons #landing .feature_wrap_parent .feature_wrap .feature_text {
+  margin-bottom: 10px;
+  line-height: 26px;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (min-width: 1440px) {
+  #gaco_seasons #landing .feature_wrap_parent .feature_wrap .feature_text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+#gaco_seasons #landing .feature_wrap_parent .feature_wrap p {
+  font-size: 14px;
+  margin-top: 0;
+}
+#gaco_seasons #winter {
+  background: #fff;
+  color: #606a72;
+}
+#gaco_seasons #winter .slick-slide {
+  outline: none;
+  user-select: text;
+}
+#gaco_seasons #winter ul.slick-dots {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+#gaco_seasons #winter ul.slick-dots li {
+  display: inline-block;
+  vertical-align: top;
+  width: 12px;
+  height: 12px;
+  margin: 0 12px;
+}
+#gaco_seasons #winter ul.slick-dots li button {
+  border: none;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  background: #acb6bf;
+  font-size: 0;
+  outline: none;
+  padding: 0;
+}
+#gaco_seasons #winter ul.slick-dots li.slick-active button {
+  background: blue;
+}
+#gaco_seasons #winter .product_lists {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  #gaco_seasons #winter .product_lists {
+    margin-top: 40px;
+  }
+}
+#gaco_seasons #winter .product_lists .product_item {
+  margin: 20px auto;
+}
+@media (min-width: 768px) {
+  #gaco_seasons #winter .product_lists .product_item {
+    margin: 0 40px;
+  }
+}
+@media (min-width: 1280px) {
+  #gaco_seasons #winter .product_lists .product_item {
+    margin: 0 40px;
+  }
+}
+@media (min-width: 1440px) {
+  #gaco_seasons #winter .product_lists .product_item {
+    margin: 0 40px;
+  }
+}
+#gaco_seasons #winter .product_lists .pod_cover {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#gaco_seasons #winter .product_lists .pod_cover:after {
+  content: ' ';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #025bdc;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -20px;
+}
+#gaco_seasons #winter .product_lists .pod_cover img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
+#gaco_seasons #winter .product_lists .pod_name {
+  font-size: 20px;
+}
+#gaco_seasons #winter .product_lists .pod_desc {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+#gaco_seasons #spring .map_container {
+  position: relative;
+  min-height: 490px;
+}
+#gaco_seasons #spring .map_container #map {
+  position: absolute;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  left: 10px;
+}
+@media (min-width: 1024px) {
+  #gaco_seasons #spring .map_container #map {
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    left: 40px;
+  }
+}
+#gaco_seasons #spring dl {
+  margin: 20px auto;
+  padding: 0;
+}
+@media (min-width: 1024px) {
+  #gaco_seasons #spring dl {
+    margin: 40px auto;
+  }
+}
+#gaco_seasons #spring dl dt {
+  margin-bottom: 12px;
+}
+#gaco_seasons #spring dl dt .loc_label {
+  display: inline-block;
+  padding: 1px 15px;
+  border-radius: 15px;
+  min-width: 36px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: #0059eb;
+  background: -moz-linear-gradient(left, #0059eb 0%, #0029f9 100%);
+  background: -webkit-linear-gradient(left, #0059eb 0%, #0029f9 100%);
+  background: linear-gradient(to right, #0059eb 0%, #0029f9 100%);
+}
+#gaco_seasons #spring dl dd {
+  margin-left: 10px;
+}
+#gaco_seasons #spring dl dd a {
+  color: #fff;
+  word-break: break-all;
+}
+#gaco_seasons #spring dl ul {
+  margin: 0 auto;
+  padding: 0;
+}
+#gaco_seasons #spring dl ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -20px;
+  padding-left: 20px;
+}
+#gaco_seasons #summer {
+  background: #fff;
+  color: #606a72;
+}
+#gaco_seasons #summer .container_seminar {
+  max-width: 980px;
+}
+@media (min-width: 1280px) {
+  #gaco_seasons #summer .agenda_panel {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+#gaco_seasons #summer .agenda_panel img {
+  margin-bottom: 10px;
+}
+#gaco_seasons #summer .agenda_title {
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  #gaco_seasons #summer .agenda_title {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+#gaco_seasons #summer .agenda_title,
+#gaco_seasons #summer .agenda_panel_title {
+  font-size: 20px;
+}
+#gaco_seasons #summer .agenda_panel_title {
+  margin-bottom: 10px;
+}
+#gaco_seasons #summer .agenda_container {
+  padding: 0 10px;
+}
+@media (min-width: 1280px) {
+  #gaco_seasons #summer .agenda_container {
+    margin-bottom: -20px;
+  }
+}
+#gaco_seasons #summer .register_now:hover {
+  background: linear-gradient(to right, #0566ff 0%, #1636ff 100%);
+}
+#gaco_seasons #summer .register_now,
+#gaco_seasons #summer .not_start_order {
+  color: #fff;
+  border-radius: 25px;
+  padding: 12px 25px;
+  min-width: 100px;
+  white-space: normal;
+  font-size: 18px;
+  background: #005bea;
+  background: linear-gradient(to right, #005bea 0%, #0023fb 100%);
+  -moz-transition: background 0.22s ease;
+  -o-transition: background 0.22s ease;
+  -webkit-transition: background 0.22s ease;
+  transition: background 0.22s ease;
+}
+#gaco_seasons #summer .not_start_order {
+  cursor: not-allowed;
+}
+#gaco_seasons #summer table {
+  width: 100%;
+}
+#gaco_seasons #summer table tr {
+  border-bottom: 1px solid #4b4b4b;
+}
+#gaco_seasons #summer table tr th,
+#gaco_seasons #summer table tr td {
+  text-align: left;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 1280px) {
+  #gaco_seasons #summer table tr th,
+  #gaco_seasons #summer table tr td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+#gaco_seasons #summer table tr th {
+  padding-right: 10px;
+}
+#gaco_seasons #summer table tr td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#gaco_seasons #summer table tr:last-of-type {
+  border-bottom-color: transparent;
+}
+@media (min-width: 1280px) {
+  #gaco_seasons #summer .pc_right {
+    position: relative;
+  }
+  #gaco_seasons #summer .pc_right:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4b4b4b;
+    width: 1px;
+    height: 100%;
+  }
+  #gaco_seasons #summer .pc_left {
+    padding-right: 65px;
+  }
+  #gaco_seasons #summer .pc_right {
+    padding-left: 65px;
+  }
+}
+#gaco_seasons #autumn ul {
+  margin: 0 auto;
+  padding: 0;
+  margin: 0 auto;
+}
+#gaco_seasons #autumn ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -20px;
+  padding-left: 20px;
+}
+#gaco_seasons #autumn .partner_link {
+  display: block;
+  text-decoration: none;
+}
+#seasons_header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  -moz-transition: padding 0.33s ease;
+  -o-transition: padding 0.33s ease;
+  -webkit-transition: padding 0.33s ease;
+  transition: padding 0.33s ease;
+}
+@media (min-width: 1440px) {
+  #seasons_header {
+    background: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 1840px) {
+  #seasons_header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+#seasons_header.hd-smaller {
+  background: rgba(255, 255, 255, 0.85);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#seasons_header.open-menu {
+  background: rgba(255, 255, 255, 0.85);
+}
+#seasons_header.open-menu #menu {
+  display: block;
+}
+#seasons_header.open-menu #menu li:not(.change-language) a {
+  display: inline-block;
+}
+#seasons_header.open-menu #menu li.change-language {
+  margin: 20px auto;
+}
+
+#seasons_header .right {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  #seasons_header .right {
+    padding: 10px;
+  }
+}
+#seasons_header .hambuger {
+  cursor: pointer;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 20px;
+  text-align: center;
+  color: #1db0b8;
+  font-size: 30px;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  #seasons_header .hambuger {
+    display: none;
+  }
+}
+#seasons_header #menu {
+  display: none;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 15px;
+}
+#seasons_header #menu li {
+  display: block;
+  vertical-align: middle;
+}
+#seasons_header #menu li:not(.change-language) a {
+  color: #1db0b8;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+  margin: 0 10px;
+}
+@media (min-width: 1280px) {
+  #seasons_header #menu li:not(.change-language) a {
+    margin: 0 20px;
+  }
+}
+#seasons_header #menu li:not(.change-language):hover a:after,
+#seasons_header #menu li:not(.change-language).active a:after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  bottom: 4px;
+  height: 1px;
+  background-color: #37c6c0;
+  left: 0;
+}
+#seasons_header #menu li.change-language {
+  margin-left: 40px;
+  padding: 0 10px;
+}
+#seasons_header #menu li.change-language a {
+  font-weight: bold;
+  color: #fff;
+}
+#seasons_header #menu li.change-language a.current {
+  color: #1db0b8;
+}
+@media (min-width: 768px) {
+  #seasons_header #menu {
+    display: block;
+  }
+  #seasons_header #menu li {
+    display: inline-block;
+  }
+}
+#copyright {
+  text-align: center;
+  font-size: 12px;
+  background: #09090a;
+  line-height: 30px;
+  position: static;
+  width: 100%;
+  height: 30px;
+}
+@media (min-width: 1280px) {
+  #copyright {
+    z-index: 4;
+    position: fixed;
+    width: auto;
+    height: 100%;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    color: rgba(95, 105, 113, 0.33);
+    top: 0;
+    line-height: 12px;
+    background: transparent;
+    right: 0px;
+    -moz-transition: all 0.33s ease;
+    -o-transition: all 0.33s ease;
+    -webkit-transition: all 0.33s ease;
+    transition: all 0.33s ease;
+  }
+}
+@media (min-width: 1640px) {
+  #copyright {
+    right: 30px;
+  }
+}
+#solution_form {
+  padding: 0;
+}
+#solution_form .cnyLoading {
+  position: absolute;
+  transform-origin: center center;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  line-height: 70px;
+  text-align: center;
+}
+#solution_form #register_form_iframe {
+  max-height: 860px !important;
+  height: 100vh;
+  min-height: 400px;
+  z-index: 1;
+  position: relative;
+}
