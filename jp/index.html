@@ -496,7 +496,7 @@
           </div>
           <div class="col-lg-8 pl-lg-5 mt-6 mt-lg-0">
             <h5 class="color-white">ご質問やお問い合わせ：</h5>
-            <form method="POST" data-netlify="true" name="contact">
+            <form method="POST" data-netlify="true" name="contact" id="contact-form" action="/#contact">
               <div class="row">
                 <div class="col-md-6 col-sm-12 mt-4">
                   <input class="form-control" type="hidden" name="from" value="gaco.jp/jp" />
@@ -513,7 +513,8 @@
                 </div>
                 <div class="col-md-10 col-sm-12 mt-4" data-netlify-recaptcha="true"></div>
                 <div class="col-md-2 col-sm-12 mt-5 pl-0">
-                  <button class="btn btn-info" type="submit">送信</button>
+                  <button class="btn btn-info" type="submit" data-dismiss="modal"
+                    data-target="#sendFormModal">送信</button>
                 </div>
               </div>
             </form>
@@ -641,6 +642,25 @@
         </div>
       </div>
     </section>
+    <div id="sendFormModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="sendFormModalTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">お問い合わせ、ありがとうございます。</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            GACOからの返信をお待ちください。
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <!-- JavaScripts -->
   <script src="assets/lib/modernizr.min.js"></script>
@@ -660,6 +680,18 @@
   <script src="assets/js/core.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/numbercount.js"></script>
+  <script>
+    $("#contact-form").submit(function (e) {
+      e.preventDefault();
+
+      var $form = $(this);
+      $.post($form.attr("action"), $form.serialize()).then(function () {
+        $('#sendFormModal').modal({
+          show: true
+        });
+      });
+    });
+  </script>
 
 </body>
 
